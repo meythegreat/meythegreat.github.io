@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miguel Angelo Basinillo | IT Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">PORTFOLIO.</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#documents">Docs</a></li>
+            <li><a href="#projects">Systems</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="glitch-text" data-text="Hello, I'm Miguel Angelo Basinillo">Hello, I'm Miguel Angelo Basinillo</h1>
+            <h2>Junior Systems Developer & IT Strategist</h2>
+            <p>"Bridging the gap between complex code and user-centric design."</p>
+            <div class="hero-btns">
+                <a href="#projects" class="btn primary-btn">View My Work</a>
+                <a href="#contact" class="btn secondary-btn">Contact Me</a>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="profile-frame">
+                <img src="images/my pic hehe.png" alt="Profile Photo">
+            </div>
+        </div>
+    </section>
+
+    <section id="documents" class="section">
+        <h2 class="section-title">Professional Documents</h2>
+        <div class="card-grid">
+            <div class="card doc-card">
+                <i class="fas fa-file-pdf icon"></i>
+                <h3>My Résumé</h3>
+                <p>Full breakdown of skills and history.</p>
+                <a href="Basinillo_MiguelAngelo_ChronologicalResume.pdf" download class="btn-sm">Download PDF</a>
+            </div>
+            <div class="card doc-card">
+                <i class="fas fa-envelope-open-text icon"></i>
+                <h3>Cover Letter</h3>
+                <p>Tailored for [Target Job Title].</p>
+                <a href="#" class="btn-sm">View Letter</a>
+            </div>
+            <div class="card doc-card">
+                <i class="fab fa-linkedin icon"></i>
+                <h3>LinkedIn</h3>
+                <p>Professional network & endorsements.</p>
+                <a href="https://www.linkedin.com/in/miguel-angelo-basinillo-2118b7395" target="_blank" class="btn-sm">Connect</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section dark-bg">
+        <h2 class="section-title">Technical Systems</h2>
+        <p class="subtitle">Recent development projects.</p>
+
+        <div class="project-card">
+                <div class="project-img">
+                    <img src="images/musicdashboard.png" alt="Music Dashboard">
+                </div>
+                <div class="project-info">
+                    <h3>Music Dashboard Management System</h3>
+                    <p class="tech-stack">PHP • MySQL • Laravel</p>
+                    <p>Designed architecture for 60 units with VLAN segmentation for security.</p>
+                    <a href="https://github.com/meythegreat/Basinillo_laravelProject" target="_blank" class="btn primary-btn">
+    View Source Code <i class="fab fa-github"></i>
+</a>
+                </div>
+            </div>
+        </div>
+        <div class="project-container">
+            <div class="project-card">
+                <div class="project-img">
+                    <img src="images/g4libms.JPEG" alt="Library Management System">
+                </div>
+                <div class="project-info">
+                    <h3>Library Management System</h3>
+                    <p class="tech-stack">PHP • MySQL • Django</p>
+                    <p>Designed a secure database architecture for book tracking. Reduced retrieval time by 40%.</p>
+                    <a href="https://github.com/meythegreat/group4_libraryms_project" target="_blank" class="btn primary-btn">
+    View Source Code <i class="fab fa-github"></i>
+</a>
+                </div>
+            </div>
+    </section>
+
+    <section id="academic" class="section">
+        <h2 class="section-title">Certificates & Academics</h2>
+        <div class="cert-grid">
+            <div class="cert-item">
+                <img src="https://via.placeholder.com/300x200" alt="Certificate">
+                <h4>TBA</h4>
+                <p>TBA</p>
+            </div>
+            <div class="cert-item">
+                <img src="images/cert1.jpg" alt="Group Project">
+                <h4>DABOT 3.2</h4>
+                <p>Student Leader</p>
+            </div>
+            <div class="cert-item">
+                <img src="images/cert2.jpg" alt="Group Project">
+                <h4>Coders' Tribe</h4>
+                <p>Participant</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="footer">
+        <div class="email-signature">
+            <h3>MIGUEL ANGELO B. BASINILLO</h3>
+            <p class="title">BS Information Technology Student</p>
+            <p>Filamer Christian University, Inc.</p>
+            <p>📧 miguel102104@gmail.com | 📞 +63 976 160 3791</p>
+            <div class="socials">
+                <a href="https://github.com/meythegreat"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/miguel-angelo-basinillo-2118b7395"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+        <p class="copyright">© 2025 Miguel Angelo Basinillo. All Rights Reserved.</p>
+    </section>
+
+    <div id="videoModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div id="videoContainer">
+                <p style="color:white; text-align:center; padding: 50px;">[Video Placeholder - Upload your MP4 to GitHub and link it here]</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
