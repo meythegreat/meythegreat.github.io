@@ -193,38 +193,48 @@
                 <h2 class="text-4xl font-black text-white">Documentation<span class="text-cyber-primary">.</span></h2>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-3 md:grid-rows-2 gap-6 h-auto md:h-[500px]">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
                 
-                <div class="md:col-span-2 md:row-span-2 glass-gradient rounded-3xl p-8 flex flex-col justify-between group relative overflow-hidden" data-tilt data-tilt-glare data-tilt-max-glare="0.2">
+                <div class="md:col-span-3 glass-gradient rounded-3xl p-8 flex flex-col md:flex-row items-center justify-between gap-8 group relative overflow-hidden" data-tilt data-tilt-glare data-tilt-max-glare="0.1">
                     <div class="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full blur-3xl -mr-16 -mt-16 pointer-events-none"></div>
-                    <div>
-                        <div class="inline-block p-3 bg-indigo-500/20 rounded-xl mb-6 text-indigo-400">
-                            <i class="fas fa-file-invoice text-3xl"></i>
+                    <div class="flex items-start gap-6">
+                        <div class="hidden md:block p-4 bg-indigo-500/20 rounded-2xl text-indigo-400">
+                            <i class="fas fa-file-invoice text-4xl"></i>
                         </div>
-                        <h3 class="text-3xl font-bold text-white mb-2">Curriculum Vitae</h3>
-                        <p class="text-slate-400 max-w-md">Detailed breakdown of academic achievements, technical proficiencies, and leadership roles in student organizations.</p>
-                        
-                        <div class="mt-8 flex gap-2">
-                            <span class="px-3 py-1 text-xs font-mono bg-black/30 border border-white/10 rounded-full text-slate-300">MySQL</span>
-                            <span class="px-3 py-1 text-xs font-mono bg-black/30 border border-white/10 rounded-full text-slate-300">Blade</span>
-                            <span class="px-3 py-1 text-xs font-mono bg-black/30 border border-white/10 rounded-full text-slate-300">Git</span>
+                        <div>
+                            <h3 class="text-3xl font-bold text-white mb-2">Curriculum Vitae</h3>
+                            <p class="text-slate-400 max-w-xl">Detailed breakdown of academic achievements, technical proficiencies (Laravel/Python), and leadership roles.</p>
+                            
+                            <div class="mt-4 flex gap-2">
+                                <span class="px-3 py-1 text-xs font-mono bg-black/30 border border-white/10 rounded-full text-slate-300">MySQL</span>
+                                <span class="px-3 py-1 text-xs font-mono bg-black/30 border border-white/10 rounded-full text-slate-300">Blade</span>
+                                <span class="px-3 py-1 text-xs font-mono bg-black/30 border border-white/10 rounded-full text-slate-300">Git</span>
+                            </div>
                         </div>
                     </div>
-                    <a href="Basinillo_MiguelAngelo_ChronologicalResume.pdf" download class="mt-8 inline-flex items-center gap-2 text-white font-bold group-hover:translate-x-2 transition-transform">
+                    <a href="Basinillo_MiguelAngelo_ChronologicalResume.pdf" download class="px-8 py-4 rounded-xl bg-white text-cyber-dark font-bold hover:bg-indigo-50 transition-all flex items-center gap-2 shadow-lg hover:shadow-indigo-500/20 whitespace-nowrap">
                         Download PDF <i class="fas fa-arrow-right text-cyber-primary"></i>
                     </a>
                 </div>
 
-                <a href="https://www.linkedin.com/in/miguel-angelo-basinillo-2118b7395" target="_blank" class="glass-gradient rounded-3xl p-6 flex flex-col justify-center items-start hover:border-blue-500/50 transition-all group" data-tilt data-tilt-scale="1.02">
+                <a href="https://www.linkedin.com/in/miguel-angelo-basinillo-2118b7395" target="_blank" class="glass-gradient rounded-3xl p-6 flex flex-col justify-center items-start hover:border-blue-500/50 transition-all group h-48" data-tilt data-tilt-scale="1.02">
                     <i class="fab fa-linkedin text-4xl text-white mb-4 group-hover:text-[#0077b5] transition-colors"></i>
                     <h3 class="text-xl font-bold text-white">LinkedIn</h3>
                     <p class="text-sm text-slate-400">Professional Network</p>
                 </a>
 
-                <div onclick="openModal()" class="glass-gradient rounded-3xl p-6 flex flex-col justify-center items-start cursor-pointer hover:border-cyber-primary/50 transition-all group" data-tilt data-tilt-scale="1.02">
+                <div onclick="openModal()" class="glass-gradient rounded-3xl p-6 flex flex-col justify-center items-start cursor-pointer hover:border-cyber-primary/50 transition-all group h-48" data-tilt data-tilt-scale="1.02">
                     <i class="fas fa-terminal text-3xl text-cyber-accent mb-4 group-hover:animate-pulse"></i>
                     <h3 class="text-xl font-bold text-white">Cover Letter</h3>
                     <p class="text-sm text-slate-400">Target: Systems Dev</p>
+                    <p class="text-xs text-cyber-primary mt-2 font-mono">Run CLI >_</p>
+                </div>
+
+                <div onclick="openSigModal()" class="glass-gradient rounded-3xl p-6 flex flex-col justify-center items-start cursor-pointer hover:border-emerald-500/50 transition-all group h-48" data-tilt data-tilt-scale="1.02">
+                    <i class="fas fa-signature text-3xl text-emerald-400 mb-4 group-hover:scale-110 transition-transform"></i>
+                    <h3 class="text-xl font-bold text-white">Email Signature</h3>
+                    <p class="text-sm text-slate-400">Digital Branding</p>
+                    <p class="text-xs text-emerald-400 mt-2 font-mono">View Preview</p>
                 </div>
             </div>
         </div>
@@ -314,15 +324,26 @@
         </div>
     </section>
 
-    <section class="py-24 relative overflow-hidden">
+<section class="py-24 relative overflow-hidden">
         <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-cyber-primary/10 via-cyber-dark to-cyber-dark pointer-events-none"></div>
         
         <div class="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <h2 class="text-4xl font-black text-white mb-16 text-center">Certificates & <span class="text-cyber-crimson">Impact</span></h2>
             
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="flex flex-wrap justify-center gap-6">
                 
-                <div onclick="openImage('images/coders.jpg')" class="glass p-6 rounded-2xl text-center hover:border-white/20 transition-all cursor-pointer group relative" data-tilt data-tilt-scale="1.05">
+                <div onclick="window.open('images/cse_pass.pdf', '_blank')" class="w-full sm:w-[calc(50%-12px)] lg:w-[calc(25%-18px)] glass p-6 rounded-2xl text-center border border-yellow-500/30 hover:border-yellow-500 hover:bg-yellow-500/5 transition-all cursor-pointer group relative" data-tilt data-tilt-scale="1.05">
+                    <div class="absolute inset-0 bg-yellow-500/10 blur-xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                    <div class="w-14 h-14 mx-auto bg-gradient-to-br from-yellow-400 to-amber-600 rounded-xl flex items-center justify-center mb-4 text-white shadow-lg shadow-yellow-500/30 relative z-10">
+                        <i class="fas fa-landmark text-xl"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white relative z-10">Civil Service Prof.</h3>
+                    <p class="text-xs text-yellow-200/80 mt-2 relative z-10">Professional Level Passer</p>
+                    <p class="text-xs text-slate-400 mt-2 relative z-10">August 11, 2024</p>
+                    <p class="text-[10px] text-yellow-400 mt-4 opacity-0 group-hover:opacity-100 transition-opacity font-mono relative z-10">Open PDF Result <i class="fas fa-external-link-alt ml-1"></i></p>
+                </div>
+
+                <div onclick="openImage('images/coders.jpg')" class="w-full sm:w-[calc(50%-12px)] lg:w-[calc(25%-18px)] glass p-6 rounded-2xl text-center hover:border-white/20 transition-all cursor-pointer group relative" data-tilt data-tilt-scale="1.05">
                     <div class="absolute inset-0 bg-indigo-500/10 blur-xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
                     <div class="w-14 h-14 mx-auto bg-gradient-to-br from-cyber-primary to-indigo-600 rounded-xl flex items-center justify-center mb-4 text-white shadow-lg shadow-indigo-500/30 relative z-10">
                         <i class="fas fa-code-branch text-xl"></i>
@@ -333,7 +354,7 @@
                     <p class="text-[10px] text-cyber-primary mt-4 opacity-0 group-hover:opacity-100 transition-opacity font-mono relative z-10">View Certificate <i class="fas fa-expand-alt ml-1"></i></p>
                 </div>
                 
-                <div onclick="openImage('images/dabot.jpg')" class="glass p-6 rounded-2xl text-center hover:border-white/20 transition-all cursor-pointer group relative" data-tilt data-tilt-scale="1.05">
+                <div onclick="openImage('images/dabot.jpg')" class="w-full sm:w-[calc(50%-12px)] lg:w-[calc(25%-18px)] glass p-6 rounded-2xl text-center hover:border-white/20 transition-all cursor-pointer group relative" data-tilt data-tilt-scale="1.05">
                     <div class="absolute inset-0 bg-blue-500/10 blur-xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
                     <div class="w-14 h-14 mx-auto bg-gradient-to-br from-cyber-accent to-blue-600 rounded-xl flex items-center justify-center mb-4 text-white shadow-lg shadow-blue-500/30 relative z-10">
                         <i class="fas fa-award text-xl"></i>
@@ -344,18 +365,18 @@
                     <p class="text-[10px] text-cyber-accent mt-4 opacity-0 group-hover:opacity-100 transition-opacity font-mono relative z-10">View Certificate <i class="fas fa-expand-alt ml-1"></i></p>
                 </div>
                 
-                <div onclick="openImage('images/science-week.jpg')" class="glass p-6 rounded-2xl text-center border border-teal-500/30 hover:border-teal-500 hover:bg-teal-500/5 transition-all cursor-pointer group relative" data-tilt data-tilt-scale="1.05">
+                <div onclick="openImage('images/science-week.jpg')" class="w-full sm:w-[calc(50%-12px)] lg:w-[calc(25%-18px)] glass p-6 rounded-2xl text-center border border-teal-500/30 hover:border-teal-500 hover:bg-teal-500/5 transition-all cursor-pointer group relative" data-tilt data-tilt-scale="1.05">
                     <div class="absolute inset-0 bg-teal-500/10 blur-xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
                     <div class="w-14 h-14 mx-auto bg-gradient-to-br from-teal-400 to-cyan-600 rounded-xl flex items-center justify-center mb-4 text-white shadow-lg shadow-teal-500/30 relative z-10">
                         <i class="fas fa-atom text-xl animate-spin-slow"></i>
                     </div>
                     <h3 class="text-lg font-bold text-white relative z-10">RSTW 2025</h3>
                     <p class="text-xs text-teal-200/80 mt-2 relative z-10">Science & Tech Week</p>
-                    <p class="text-xs text-teal-200/80 mt-2 relative z-10">September 11, 2025</p>
+                    <p class="text-xs text-slate-400 mt-2 relative z-10">September 11, 2025</p>
                     <p class="text-[10px] text-teal-400 mt-4 opacity-0 group-hover:opacity-100 transition-opacity font-mono relative z-10">View Certificate <i class="fas fa-expand-alt ml-1"></i></p>
                 </div>
                 
-                <div onclick="openImage('images/wadhwani.jpg')" class="glass p-6 rounded-2xl text-center border border-orange-500/30 hover:border-orange-500 hover:bg-orange-500/5 transition-all cursor-pointer group relative" data-tilt data-tilt-scale="1.05">
+                <div onclick="openImage('images/wadhwani.jpg')" class="w-full sm:w-[calc(50%-12px)] lg:w-[calc(25%-18px)] glass p-6 rounded-2xl text-center border border-orange-500/30 hover:border-orange-500 hover:bg-orange-500/5 transition-all cursor-pointer group relative" data-tilt data-tilt-scale="1.05">
                     
                     <a href="https://web.certificate.wfglobal.org/en/certificate?certificateId=693920c449e895be1f166edd" target="_blank" onclick="event.stopPropagation()" class="absolute top-3 right-3 z-30 w-8 h-8 flex items-center justify-center rounded-full bg-white/5 border border-white/10 text-orange-400 hover:bg-orange-500 hover:text-white hover:scale-110 transition-all shadow-lg" title="Verify on the Wadhwani Certificate Portal">
                         <i class="fas fa-check-circle"></i>
@@ -367,7 +388,7 @@
                     </div>
                     <h3 class="text-lg font-bold text-white relative z-10">Wadhwani Alumni</h3>
                     <p class="text-xs text-orange-200/80 mt-2 relative z-10">Entrepreneurship</p>
-                    <p class="text-xs text-orange-200/80 mt-2 relative z-10">December 10, 2025</p>
+                    <p class="text-xs text-slate-400 mt-2 relative z-10">December 10, 2025</p>
                     <p class="text-[10px] text-orange-400 mt-4 opacity-0 group-hover:opacity-100 transition-opacity font-mono relative z-10">View Certificate <i class="fas fa-expand-alt ml-1"></i></p>
                 </div>
             </div>
@@ -385,8 +406,8 @@
             <div class="flex justify-center gap-8 text-2xl mb-8">
                 <a href="https://github.com/meythegreat" class="text-slate-500 hover:text-white hover:-translate-y-1 transition-all"><i class="fab fa-github"></i></a>
                 <a href="https://www.linkedin.com/in/miguel-angelo-basinillo-2118b7395" class="text-slate-500 hover:text-blue-500 hover:-translate-y-1 transition-all"><i class="fab fa-linkedin"></i></a>
-                <a href="https://www.instagram.com/miggywitdahoodi/" class="text-slate-500 hover:text-blue-500 hover:-translate-y-1 transition-all"><i class="fab fa-instagram"></i></a>
-                <a href="https://www.youtube.com/@MeytheGreat" class="text-slate-500 hover:text-blue-500 hover:-translate-y-1 transition-all"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.instagram.com/miggywitdahoodi/" class="text-slate-500 hover:text-purple-500 hover:-translate-y-1 transition-all"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com/@MeytheGreat" class="text-slate-500 hover:text-red-500 hover:-translate-y-1 transition-all"><i class="fab fa-youtube"></i></a>
             </div>
             
             <div class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-slate-600 font-mono">
@@ -427,13 +448,60 @@
         </div>
     </div>
 
-    <div id="imageModal" class="fixed inset-0 z-[150] flex items-center justify-center bg-black/95 backdrop-blur-md transition-all duration-500 opacity-0 pointer-events-none" onclick="closeImageModal()">
-        <button class="absolute top-6 right-6 text-white hover:text-cyber-primary transition-colors z-[160]">
-            <i class="fas fa-times text-4xl"></i>
-        </button>
-        <div class="relative">
-            <img id="expandedImg" src="" alt="Expanded View" class="max-w-[95vw] max-h-[90vh] rounded-lg shadow-2xl border border-white/10 transform scale-90 transition-all duration-500" onclick="event.stopPropagation()">
-            <div class="text-center mt-4 text-slate-400 font-mono text-sm">Click outside to close</div>
+    <div id="imageModal" class="fixed inset-0 z-[150] flex items-center justify-center bg-black/95 backdrop-blur-md transition-all duration-500 opacity-0 pointer-events-none group" onclick="closeImageModal()">
+            
+            <button class="absolute top-6 right-6 text-white hover:text-cyber-primary transition-colors z-[160]">
+                <i class="fas fa-times text-4xl"></i>
+            </button>
+
+            <button id="lbPrev" onclick="changeLightboxSlide(-1); event.stopPropagation()" class="absolute left-4 top-1/2 -translate-y-1/2 w-12 h-12 flex items-center justify-center rounded-full bg-white/10 hover:bg-cyber-primary text-white transition-all hidden z-[160]">
+                <i class="fas fa-chevron-left text-2xl"></i>
+            </button>
+
+            <button id="lbNext" onclick="changeLightboxSlide(1); event.stopPropagation()" class="absolute right-4 top-1/2 -translate-y-1/2 w-12 h-12 flex items-center justify-center rounded-full bg-white/10 hover:bg-cyber-primary text-white transition-all hidden z-[160]">
+                <i class="fas fa-chevron-right text-2xl"></i>
+            </button>
+
+            <div class="relative">
+                <img id="expandedImg" src="" alt="Expanded View" class="max-w-[95vw] max-h-[90vh] rounded-lg shadow-2xl border border-white/10 transform scale-90 transition-all duration-500" onclick="event.stopPropagation()">
+                <div class="text-center mt-4 text-slate-400 font-mono text-sm">Click outside to close</div>
+            </div>
+        </div>
+
+    <div id="sigModal" class="fixed inset-0 z-[100] flex items-center justify-center bg-black/80 backdrop-blur-sm transition-all duration-300 modal-closed" onclick="closeSigModal()">
+        <div class="bg-white w-full max-w-lg rounded-lg shadow-2xl m-4 overflow-hidden transform transition-all" onclick="event.stopPropagation()">
+            <div class="bg-slate-100 border-b border-slate-200 px-4 py-3 flex items-center justify-between">
+                <div class="flex items-center gap-2">
+                    <div class="w-3 h-3 rounded-full bg-slate-300"></div>
+                    <span class="text-xs font-bold text-slate-500 uppercase tracking-wider">Preview: Outgoing Mail</span>
+                </div>
+                <button onclick="closeSigModal()" class="text-slate-400 hover:text-red-500 transition-colors"><i class="fas fa-times"></i></button>
+            </div>
+            
+            <div class="p-8">
+                <p class="text-sm text-slate-600 mb-8 font-serif">Looking forward to hearing from you,<br><br>Best regards,</p>
+
+                <div class="flex items-start gap-5 p-4 border-l-4 border-cyber-primary bg-slate-50 rounded-r-lg">
+                    <div class="w-16 h-16 rounded-full bg-slate-900 overflow-hidden shrink-0 border-2 border-white shadow-md">
+                         <img src="images/my pic hehe.png" class="w-full h-full object-cover">
+                    </div>
+
+                    <div class="font-sans">
+                        <h3 class="text-lg font-black text-slate-900 leading-tight">MIGUEL ANGELO BASINILLO</h3>
+                        <p class="text-indigo-600 font-bold text-xs uppercase tracking-wider mb-3">Junior Systems Developer | IT Strategist</p>
+                        
+                        <div class="text-xs text-slate-500 space-y-1 font-medium">
+                            <p class="flex items-center gap-2"><i class="fas fa-phone-alt text-slate-400 text-[10px]"></i> +63 976 160 3791</p>
+                            <p class="flex items-center gap-2"><i class="fas fa-envelope text-slate-400 text-[10px]"></i> miguel102104@gmail.com</p>
+                            <p class="flex items-center gap-2"><i class="fas fa-globe text-slate-400 text-[10px]"></i> <a href="#" class="hover:text-indigo-500 hover:underline">meythegreat.github.io</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="bg-slate-50 px-4 py-2 border-t border-slate-200 text-center">
+                <button onclick="closeSigModal()" class="text-xs text-slate-400 hover:text-slate-600 font-bold">CLOSE PREVIEW</button>
+            </div>
         </div>
     </div>
 
@@ -486,24 +554,84 @@
             if(e.target === modal) closeModal();
         });
 
-        // Image Lightbox Logic
+        // --- UPGRADED LIGHTBOX LOGIC ---
         const imageModal = document.getElementById('imageModal');
         const expandedImg = document.getElementById('expandedImg');
+        const lbPrev = document.getElementById('lbPrev');
+        const lbNext = document.getElementById('lbNext');
+        
+        // Variables to track state
+        let currentLightboxImages = []; // Stores the array of images
+        let lightboxIndex = 0;          // Tracks which image is showing
 
+        // 1. Function to Open SINGLE Image (Certificates, Music Dashboard)
         function openImage(src) {
-            expandedImg.src = src;
+            currentLightboxImages = [src]; // Array with just 1 item
+            lightboxIndex = 0;
+            updateLightboxUI();
+            showModal();
+        }
+
+        // 2. Function to Open GALLERY (Library System)
+        function openLibraryGallery(startIndex = 0) {
+            // Define your library images here
+            currentLightboxImages = [
+                'images/libms2.png', 
+                'images/lib2.png', 
+                'images/lib3.png',
+                'images/lib4.png',
+                'images/lib5.png',
+                'images/lib6.png'
+            ];
+            lightboxIndex = startIndex; // Start at the specific slide user was looking at
+            updateLightboxUI();
+            showModal();
+        }
+
+        // Helper: Updates the Image and Buttons
+        function updateLightboxUI() {
+            // Set Image
+            expandedImg.src = currentLightboxImages[lightboxIndex];
+            
+            // Show/Hide Buttons based on array length
+            if (currentLightboxImages.length > 1) {
+                lbPrev.classList.remove('hidden');
+                lbNext.classList.remove('hidden');
+            } else {
+                lbPrev.classList.add('hidden');
+                lbNext.classList.add('hidden');
+            }
+        }
+
+        // Helper: Shows the Modal
+        function showModal() {
             imageModal.classList.remove('opacity-0', 'pointer-events-none');
-            // Small timeout to allow transition to trigger
             setTimeout(() => {
                 expandedImg.classList.remove('scale-90');
                 expandedImg.classList.add('scale-100');
             }, 50);
         }
 
+        // Helper: Hides the Modal
         function closeImageModal() {
             imageModal.classList.add('opacity-0', 'pointer-events-none');
             expandedImg.classList.remove('scale-100');
             expandedImg.classList.add('scale-90');
+        }
+
+        // Helper: Navigation Buttons
+        function changeLightboxSlide(n) {
+            lightboxIndex += n;
+            // Loop logic (Infinite scroll)
+            if (lightboxIndex >= currentLightboxImages.length) lightboxIndex = 0;
+            if (lightboxIndex < 0) lightboxIndex = currentLightboxImages.length - 1;
+            
+            // Update the view
+            expandedImg.classList.add('opacity-0'); // Quick fade out
+            setTimeout(() => {
+                updateLightboxUI();
+                expandedImg.classList.remove('opacity-0'); // Fade back in
+            }, 200);
         }
 
         // Mobile Menu
@@ -547,16 +675,30 @@
             startSlideshow();
         }
 
+        // 3. Update the "View Current Slide" function to use the new Gallery Logic
+        // This connects the small card slideshow to the big full-screen slideshow
         function openCurrentSlide() {
-            if (slides.length > 0) {
-                const currentSrc = slides[slideIndex].src;
-                openImage(currentSrc);
-            }
+            // We use the global 'slideIndex' from the small card logic
+            openLibraryGallery(slideIndex);
         }
 
         if(slides.length > 0) {
             startSlideshow();
         }
+
+    // --- Email Signature Modal Logic ---
+    const sigModal = document.getElementById('sigModal');
+    
+    function openSigModal() {
+        sigModal.classList.remove('modal-closed');
+        sigModal.classList.add('modal-open');
+    }
+    
+    function closeSigModal() {
+        sigModal.classList.remove('modal-open');
+        sigModal.classList.add('modal-closed');
+    }
     </script>
+
 </body>
 </html>
