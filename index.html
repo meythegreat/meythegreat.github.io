@@ -604,7 +604,7 @@
         </div>
     </footer>
 
-    <div id="modal" class="fixed inset-0 z-[100] flex items-center justify-center bg-black/80 backdrop-blur-sm transition-all duration-300 modal-closed">
+<div id="modal" class="fixed inset-0 z-[100] flex items-center justify-center bg-black/80 backdrop-blur-sm transition-all duration-300 modal-closed">
         <div class="bg-[#1e1e1e] w-full max-w-2xl rounded-lg border border-gray-700 shadow-2xl m-4 overflow-hidden font-mono text-sm" onclick="event.stopPropagation()">
             <div class="bg-[#2d2d2d] px-4 py-2 flex items-center justify-between border-b border-gray-700">
                 <div class="flex gap-2">
@@ -614,20 +614,26 @@
                 </div>
                 <div class="text-gray-400 text-xs">user@basinillo-portfolio:~/cover-letter</div>
             </div>
-            <div class="p-6 text-gray-300 h-96 overflow-y-auto">
+
+            <div class="p-6 text-gray-300 h-96 overflow-y-auto custom-scrollbar">
                 <p class="mb-4"><span class="text-green-400">➜</span> <span class="text-blue-400">~</span> cat cover_letter.txt</p>
                 
-                <div class="pl-4 border-l-2 border-gray-700 space-y-4">
+                <div class="pl-4 border-l-2 border-gray-700 space-y-4 mb-8">
                     <p>Dear Hiring Manager,</p>
                     <p>As a Junior Systems Developer and IT Strategist, I don't just write code; I architect solutions. My experience with <span class="text-cyber-primary">Laravel</span> and database optimization has taught me that the best systems are secure, scalable, and user-centric.</p>
-                    <p>I am eager to bring my technical expertise in PHP ecosystem and my passion for clean architecture to your team.</p>
+                    <p>I am eager to bring my technical expertise in the PHP ecosystem and my passion for clean architecture to your team.</p>
                     <p>Sincerely,<br>Miguel Angelo Basinillo</p>
                 </div>
 
                 <p class="mt-6 animate-pulse"><span class="text-green-400">➜</span> <span class="text-blue-400">~</span> <span class="w-2 h-4 bg-gray-400 inline-block align-middle"></span></p>
                 
-                <div class="mt-8 text-center">
-                    <button onclick="closeModal()" class="px-4 py-2 bg-white/10 hover:bg-white/20 rounded border border-white/10 text-white transition-colors">
+                <div class="mt-12 flex flex-col sm:flex-row justify-center gap-4 pt-4 border-t border-white/5">
+                    
+                    <button onclick="window.open('Basinillo Cover Letter.pdf', '_blank')" class="px-6 py-2 bg-emerald-500/10 hover:bg-emerald-500/20 rounded border border-emerald-500/30 text-emerald-400 transition-colors flex items-center justify-center gap-2 group">
+                        <i class="fas fa-file-pdf group-hover:scale-110 transition-transform"></i> Open Original PDF
+                    </button>
+
+                    <button onclick="closeModal()" class="px-6 py-2 bg-white/5 hover:bg-white/10 rounded border border-white/10 text-slate-400 hover:text-white transition-colors">
                         Close Terminal
                     </button>
                 </div>
